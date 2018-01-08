@@ -1,4 +1,4 @@
-#CocoaPods私有化组件流程 + fastlane自动维护升级脚本
+# CocoaPods私有化组件流程 + fastlane自动维护升级脚本
 
 >### **注意：如下几个步骤需要手动集成：**
 > 
@@ -103,7 +103,7 @@ BruceLiLibs为**私有库**名称，xxx为你的**podspec**名称。
 fastlane ManagerLibs tag:[版本号] message:"[本次升级的日志信息]" repo:[私有库名称] podspec:[podspec名称]
 
 // 案例
-fastlane ManagerLibs tag:[1.0.0] message:"封装私有库" repo:BruceLiLibs  podspec: fastlaneDemo
+fastlane ManagerLibs tag:1.0.0 message:"封装私有库" repo:BruceLiLibs  podspec: fastlaneDemo
 ```
 
 如果忘了私有库名称，可以用**pod repo**查看。
